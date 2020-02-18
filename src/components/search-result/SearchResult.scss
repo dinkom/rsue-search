@@ -1,0 +1,14 @@
+@import '../../scss/variables.scss';
+
+.search__result {
+  padding: 10px 15px;
+
+  &:hover {
+    background: $accent-color;
+  }
+}
+
+.search__result-email {
+  float: right;
+  color: $secondary-text;
+}

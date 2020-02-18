@@ -1,0 +1,67 @@
+@import '../../scss/variables.scss';
+
+.search {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.3em;
+  color: $primary-text;
+
+  input {
+    display: block;
+    width: 100%;
+    height: 70px;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px 10px 5px 90px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5em;
+    font-weight: 300;
+    background: url('../../icons/search.png');
+    background-repeat: no-repeat;
+    background-size: 32px;
+    background-position: 30px;
+    border-radius: 8px;
+    border: 2px solid $outline-color;
+  }
+
+  input:focus {
+    outline: none;
+  }
+
+  &__has-results {
+    input {
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+  }
+
+  &__results {
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border: 2px solid $outline-color;
+    border-top: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  .search {
+    width: 80%;
+  }
+}
+
+@media (max-width: 800px) {
+  .search {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 650px) {
+  .search {
+    font-size: .85em;
+  }
+}
